@@ -30,14 +30,9 @@
     </dependencyManagement>
 
     <modules>
-        <module>contracts</module>
-        <module>user-service</module>
-        <module>event-service</module>
-        <module>booking-service</module>
-        <module>ticket-service</module>
-        <module>sales-service</module>
-        <module>api-gateway</module>
-    </modules>
+    <module>contracts</module>
+    <module>sales-service</module>
+</modules>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
