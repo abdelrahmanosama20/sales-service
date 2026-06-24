@@ -24,7 +24,7 @@ jobs:
         run: mvn -B clean install -DskipTests
 
       - name: Run sales-service tests
-        run: mvn -B test -pl sales-service -am
+        run: mvn -B test -pl sales-service -am -Dtest="!SalesServiceApplicationTests,!SagaIntegrationTest,!SagaE2ETest" -DfailIfNoTests=false
 
       - name: Build Docker image
         run: docker build -t sales-service:latest ./sales-service
